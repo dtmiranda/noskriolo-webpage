@@ -1,9 +1,10 @@
-import Image from 'next/image'
+import Hero from '@/components/Hero/Hero'
+
 
 export default function Home() {
   return (
-    <div className='flex justify-center items-center text-cyan-600'>
-      hello cabo verde
-    </div>
+    <section>
+      <Hero />
+    </section>
   )
 }

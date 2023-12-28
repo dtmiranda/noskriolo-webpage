@@ -30,9 +30,9 @@ const config: Config = {
         }
       },
 
-      fontFamily: {
+      /* fontFamily: {
         'body': [
-          'Inter',
+          'Montserrat',
           'ui-sans-serif',
           'system-ui',
           '-apple-system',
@@ -49,7 +49,7 @@ const config: Config = {
           'Noto Color Emoji'
         ],
         'sans': [
-          'Inter',
+          'Montserrat',
           'ui-sans-serif',
           'system-ui',
           '-apple-system',
@@ -65,7 +65,7 @@ const config: Config = {
           'Segoe UI Symbol',
           'Noto Color Emoji'
         ]
-      }
+      } */
     },
   },
   plugins: [],

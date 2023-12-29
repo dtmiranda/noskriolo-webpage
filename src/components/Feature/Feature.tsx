@@ -41,24 +41,24 @@ function Feature() {
 
         <div className='grid-cols-1'>
 
-          <div className='mt-16 flex justify-center items-center lg:justify-end lg:items-end flex-col'>
+          <div className='mt-16 md:mt-0 flex justify-center items-center lg:justify-start lg:items-start flex-col'>
             <div className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-green-400 to-blue-600 dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
               <span className="relative text-4xl font-bold px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                 3
               </span>
             </div>
             <h3 className='mb-2 text-xl font-semibold text-left dark:text-white '>Sabedoria em Cada Provérbio</h3>
-            <p className='text-justify lg:text-right text-gray-500 dark:text-gray-400'>Mergulhe na riqueza cultural com nossa coleção de "Provérbios e Traduções". Cada provérbio é uma janela para a alma do Crioulo Cabo-verdiano, compartilhando sabedoria e tradição.</p>
+            <p className='text-justify lg:text-left text-gray-500 dark:text-gray-400'>Mergulhe na riqueza cultural com nossa coleção de "Provérbios e Traduções". Cada provérbio é uma janela para a alma do Crioulo Cabo-verdiano, compartilhando sabedoria e tradição.</p>
           </div>
 
-          <div className='mt-16 flex justify-center items-center lg:justify-end lg:items-end flex-col'>
+          <div className='mt-16 flex justify-center items-center lg:justify-start lg:items-start flex-col'>
             <div className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-green-400 to-blue-600 dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
               <span className="relative text-4xl font-bold px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                 4
               </span>
             </div>
             <h3 className='mb-2 text-xl font-semibold dark:text-white text-left'>A Língua em Ação</h3>
-            <p className='text-justify lg:text-right text-gray-500 dark:text-gray-400'>Conecte-se com o Crioulo Cabo-verdiano de maneira prática com "Exemplos de Uso". Não apenas palavras, mas experiências, para que você possa incorporar essa língua vibrante em sua vida diária.</p>
+            <p className='text-justify lg:text-left text-gray-500 dark:text-gray-400'>Conecte-se com o Crioulo Cabo-verdiano de maneira prática com "Exemplos de Uso". Não apenas palavras, mas experiências, para que você possa incorporar essa língua vibrante em sua vida diária.</p>
           </div>
 
 

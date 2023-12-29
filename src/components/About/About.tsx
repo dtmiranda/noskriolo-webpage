@@ -4,10 +4,10 @@ function About() {
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-        <img src="/about-image.png" alt="" />
+        <img src="/about-image.svg" alt="" />
         {/* <img className="w-full hidden dark:block" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg" alt="dashboard image" /> */}
         <div className="mt-4 md:mt-0">
-          <div className="mb-24 relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg  bg-gradient-to-br from-purple-600 to-blue-500 dark:text-white focus:ring-4 dark:focus:ring-blue-800">
+          <div className="mb-10 mb:16 lg:mb-20 relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg  bg-gradient-to-br from-purple-600 to-blue-500 dark:text-white focus:ring-4 dark:focus:ring-blue-800">
             <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
               Sobre nós
             </span>

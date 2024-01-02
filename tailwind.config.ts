@@ -30,10 +30,10 @@ const config: Config = {
         }
       },
 
-      /* fontFamily: {
+      fontFamily: {
         'body': [
           'Montserrat',
-          'ui-sans-serif',
+          /* 'ui-sans-serif',
           'system-ui',
           '-apple-system',
           'system-ui',
@@ -46,11 +46,11 @@ const config: Config = {
           'Apple Color Emoji',
           'Segoe UI Emoji',
           'Segoe UI Symbol',
-          'Noto Color Emoji'
+          'Noto Color Emoji' */
         ],
         'sans': [
           'Montserrat',
-          'ui-sans-serif',
+          /* 'ui-sans-serif',
           'system-ui',
           '-apple-system',
           'system-ui',
@@ -63,9 +63,9 @@ const config: Config = {
           'Apple Color Emoji',
           'Segoe UI Emoji',
           'Segoe UI Symbol',
-          'Noto Color Emoji'
+          'Noto Color Emoji' */
         ]
-      } */
+      }
     },
   },
   plugins: [],

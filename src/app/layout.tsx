@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <main>
           <Header />
-          {children}
+          <main>{children}</main>
           <Footer />
         </main>
       </body>

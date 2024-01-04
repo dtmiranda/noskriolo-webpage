@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="/" className="flex items-center">
-              {/* <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-8" alt="FlowBite Logo" /> */}
+              <img src="/logo.svg" className="mr-3 h-8 rounded-lg" alt="Nos kriolo logo" />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Nos Kriolo</span>
             </a>
             <p className='text-gray-600 dark:text-gray-400 my-4'>In the essence of Kriolu, our unique language, lies the heartbeat of our culture.</p>

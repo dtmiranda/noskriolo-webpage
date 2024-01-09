@@ -47,15 +47,16 @@ const Stats = () => {
 
             <div className="pt-6 pl-6 bg-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
 
-              <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">iOS</h5>
-
+              <h5 className="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">iOS</h5>
               <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">iOS 15.6+</p>
+
               <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-xs px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Download</button>
-              <div className='flex justify-between items-end'>
+
+              <div className='mt-4 flex justify-between items-end'>
 
                 <img src="/qr-code.svg" width={80} alt="" className='mb-6 rounded-lg' />
-                <div className=' bg-white p-4 rounded-full ml-20 -mr-3 -mb-3 overline'>
-                  <img src="/ios.svg" width={60} alt="" />
+                <div className=' bg-white p-4 rounded-full ml-16 -mr-3 -mb-3 overline'>
+                  <img src="/ios.svg" width={60} alt="ios logo" />
                 </div>
 
               </div>
@@ -63,15 +64,16 @@ const Stats = () => {
 
             <div className="mt-4 lg:mt-0 pt-6 pl-6 bg-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
 
-              <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Android</h5>
-
+              <h5 className="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Android</h5>
               <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">Android 8.0+</p>
-              <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-xs px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Download</button>
-              <div className='flex justify-between items-end'>
 
-                <img src="/qr-code.svg" width={80} alt="" className='mb-8 rounded-lg' />
-                <div className=' bg-white p-4 rounded-full ml-20 -mr-3 -mb-3 overline'>
-                  <img src="/android.svg" width={60} alt="" />
+              <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-xs px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Download</button>
+
+              <div className='mt-4 flex justify-between items-end'>
+
+                <img src="/qr-code.svg" width={80} alt="" className='mb-6 rounded-lg' />
+                <div className=' bg-white p-4 rounded-full ml-16 -mr-3 -mb-3 overline'>
+                  <img src="/android.svg" width={60} alt="Android logo" />
                 </div>
 
               </div>

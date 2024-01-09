@@ -2,67 +2,84 @@ import React from 'react'
 
 function Feature() {
   return (
-    <section className='bg-white dark:bg-gray-900'>
-      <div className='flex justify-center items-center'>
-        <div className="mb-6 mb:8 lg:mb-10 relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg  bg-gradient-to-br from-purple-600 to-blue-500 dark:text-white focus:ring-4 dark:focus:ring-blue-800">
-          <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-            Features
-          </span>
+    <section className='min-h-[80vh]'>
+
+      <div className='bg-black opacity-85 border border-green-700'>
+        <div className='pt-20 pb-10 px-4 mx-auto max-w-screen-xl lg:px-6'>
+
+          <div className='grid grid-cols-6 gap-4'>
+            <div className='col-start-1 col-end-2 flex justify-start items-start'>
+              <div className='max-w-96'>
+                <div className='mb-4 flex justify-start items-start'>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 text-blue-600">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                  </svg>
+                  <p className='pl-2 flex-col text-white text-lg font-medium'>Funcionalidades</p>
+                </div>
+
+                <h4 className='text-2xl font-semibold text-white' > <span className='text-primary-800'>Inovações:</span> do Nos Kriolo app.</h4>
+
+              </div>
+
+            </div>
+            <div className=' col-end-7 col-span-3 flex justify-center items-end'>
+              <div className='border border-l-4 border-l-red-600 border-y-0 border-r-0 pl-2'>
+                <p className='text-white te text-base font-normal'>Explore o Crioulo Cabo-verdiano com "Palavra do Dia" e "Provérbios" - a experiência perfeita para sua jornada linguística.</p>
+              </div>
+
+
+            </div>
+          </div>
+
         </div>
+
+        <div>
+          <div className='px-4 mx-auto max-w-screen-xl lg:px-6'>
+
+            <div className='grid grid-cols-3 gap-6 -mb-60'>
+
+              <div className='p-4 flex flex-col justify-center items-center bg-white rounded-2xl  overflow-visible'>
+
+                <h5 className='p-2 text-xl font-semibold text-center text-gray-950'>Palavra do dia</h5>
+                <p className='pb-4 text-gray-600 text-base font-normal text-center'>Explore uma nova palavra todos os dias com a nossa "Palavra do Dia".</p>
+                <div>
+                  <img src="/feature-1.svg" alt="" />
+                </div>
+
+              </div>
+
+              <div className='p-4 flex flex-col justify-center rounded-2xl items-center bg-white  overflow-visible'>
+
+                <div>
+                  <img src="/feature-2.svg" alt="" />
+                </div>
+
+                <h5 className='p-2 text-xl font-semibold text-center text-gray-950'>Palavra do dia</h5>
+                <p className='pb-4 text-gray-600 text-base font-normal text-center'>Explore uma nova palavra todos os dias com a nossa "Palavra do Dia".</p>
+
+              </div>
+
+              <div className='p-4 flex flex-col justify-center items-center bg-white rounded-2xl  overflow-visible'>
+
+                <h5 className='p-2 text-xl font-semibold text-center text-gray-950'>Palavra do dia</h5>
+                <p className='pb-4 text-gray-600 text-base font-normal text-center'>Explore uma nova palavra todos os dias com a nossa "Palavra do Dia".</p>
+                <div>
+                  <img src="/feature-3.svg" alt="" />
+                </div>
+
+
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
       </div>
+      <div className='bg-white min-h-[30vh]'>
 
-      <div className='gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 lg:grid-cols-3'>
-        <div className='grid-cols-1'>
-
-          <div className='flex justify-center items-center lg:justify-end lg:items-end flex-col'>
-            <div className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-green-400 to-blue-600 dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
-              <span className="relative text-4xl font-bold px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                1
-              </span>
-            </div>
-            <h3 className='mb-2 text-xl font-semibold dark:text-white text-right'>Desperte sua curiosidade diaria</h3>
-            <p className='text-justify lg:text-right text-gray-500 dark:text-gray-400'>Explore uma nova palavra do Crioulo Cabo-verdiano todos os dias com a nossa "Palavra do Dia". Uma dose diária de conhecimento que expandirá seus horizontes linguísticos.</p>
-          </div>
-
-          <div className='mt-16 flex justify-center items-center lg:justify-end lg:items-end flex-col'>
-            <div className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-green-400 to-blue-600 dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
-              <span className="relative text-4xl font-bold px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                2
-              </span>
-            </div>
-            <h3 className='mb-2 text-xl font-semibold dark:text-white text-right'>Reviva suas Descobertas</h3>
-            <p className='text-justify lg:text-right text-gray-500 dark:text-gray-400'>Mantenha o controle das suas jornadas linguísticas com a "Lista de Palavras Recentes". Cada pesquisa é uma conquista, e você pode revisitar suas descobertas a qualquer momento.</p>
-          </div>
-
-
-        </div>
-
-        <img src="/feature-image.svg" className='hidden lg:inline' alt="" />
-
-        <div className='grid-cols-1'>
-
-          <div className='mt-16 md:mt-0 flex justify-center items-center lg:justify-start lg:items-start flex-col'>
-            <div className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-green-400 to-blue-600 dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
-              <span className="relative text-4xl font-bold px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                3
-              </span>
-            </div>
-            <h3 className='mb-2 text-xl font-semibold text-left dark:text-white '>Sabedoria em Cada Provérbio</h3>
-            <p className='text-justify lg:text-left text-gray-500 dark:text-gray-400'>Mergulhe na riqueza cultural com nossa coleção de "Provérbios e Traduções". Cada provérbio é uma janela para a alma do Crioulo Cabo-verdiano, compartilhando sabedoria e tradição.</p>
-          </div>
-
-          <div className='mt-16 flex justify-center items-center lg:justify-start lg:items-start flex-col'>
-            <div className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-green-400 to-blue-600 dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
-              <span className="relative text-4xl font-bold px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                4
-              </span>
-            </div>
-            <h3 className='mb-2 text-xl font-semibold dark:text-white text-left'>A Língua em Ação</h3>
-            <p className='text-justify lg:text-left text-gray-500 dark:text-gray-400'>Conecte-se com o Crioulo Cabo-verdiano de maneira prática com "Exemplos de Uso". Não apenas palavras, mas experiências, para que você possa incorporar essa língua vibrante em sua vida diária.</p>
-          </div>
-
-
-        </div>
       </div>
 
 

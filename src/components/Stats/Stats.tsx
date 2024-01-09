@@ -3,7 +3,7 @@ import React from 'react'
 const Stats = () => {
   return (
     <section className='bg-white flex-col '>
-      <div className='py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'>
+      <div className='py-20 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'>
 
         <div className='flex-row lg:flex justify-between items-center'>
 

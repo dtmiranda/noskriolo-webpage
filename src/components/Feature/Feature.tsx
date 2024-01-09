@@ -4,7 +4,7 @@ function Feature() {
   return (
     <section className='min-h-[80vh]'>
 
-      <div className='bg-black opacity-85 border border-green-700'>
+      <div className='bg-black opacity-85 border'>
         <div className='pt-20 pb-10 px-4 mx-auto max-w-screen-xl lg:px-6'>
 
           <div className='grid grid-cols-6 gap-4'>
@@ -38,7 +38,7 @@ function Feature() {
 
             <div className='grid grid-cols-3 gap-6 -mb-60'>
 
-              <div className='p-4 flex flex-col justify-center items-center bg-white rounded-2xl  overflow-visible'>
+              <div className='p-4 flex flex-col justify-center items-center bg-white rounded-2xl shadow-md overflow-visible'>
 
                 <h5 className='p-2 text-xl font-semibold text-center text-gray-950'>Palavra do dia</h5>
                 <p className='pb-4 text-gray-600 text-base font-normal text-center'>Explore uma nova palavra todos os dias com a nossa "Palavra do Dia".</p>
@@ -48,7 +48,7 @@ function Feature() {
 
               </div>
 
-              <div className='p-4 flex flex-col justify-center rounded-2xl items-center bg-white  overflow-visible'>
+              <div className='p-4 flex flex-col justify-center rounded-2xl items-center bg-white shadow-xl overflow-visible'>
 
                 <div>
                   <img src="/feature-2.svg" alt="" />
@@ -59,7 +59,7 @@ function Feature() {
 
               </div>
 
-              <div className='p-4 flex flex-col justify-center items-center bg-white rounded-2xl  overflow-visible'>
+              <div className='p-4 flex flex-col justify-center items-center bg-white rounded-2xl shadow-md overflow-visible'>
 
                 <h5 className='p-2 text-xl font-semibold text-center text-gray-950'>Palavra do dia</h5>
                 <p className='pb-4 text-gray-600 text-base font-normal text-center'>Explore uma nova palavra todos os dias com a nossa "Palavra do Dia".</p>

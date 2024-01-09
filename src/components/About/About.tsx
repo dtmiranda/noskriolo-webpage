@@ -11,7 +11,7 @@ function About() {
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 text-primary-800">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
               </svg>
-              <p className='pl-2 flex-col text-gray-900 font-normal'>Sobre nós</p>
+              <p className='pl-2 flex-col text-lg text-gray-900 font-medium'>Sobre nós</p>
             </div>
 
             <h4 className='text-2xl text-center font-semibold' > <span className='text-primary-800'>Descubra Nossa História:</span> O Início de Tudo.</h4>

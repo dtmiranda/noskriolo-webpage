@@ -19,10 +19,10 @@ export default function Home() {
       <About />
 
       <Feature />
-
+      <Contact />
       <Download />
 
-      <Contact />
+
 
     </section>
   )

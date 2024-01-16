@@ -3,7 +3,7 @@ import React from 'react'
 const HeaderHome = () => {
   return (
     <header>
-      <nav className="bg-primary-800 border-gray-200 px-4 lg:px-6 pt-8 dark:bg-gray-800">
+      <nav className="bg-primary-900 border-gray-200 px-4 lg:px-6 pt-8 dark:bg-gray-800">
         <div className="bg-white p-2 rounded-full flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <a href="/" className="flex items-center">
             <img src="/logo.svg" className="mr-3 h-6 sm:h-9 rounded-full" alt="Nos Kriolo Logo" />

@@ -24,7 +24,7 @@ function Feature() {
             </div>
             <div className=' col-end-7 col-span-3 flex justify-center items-end'>
               <div className='border border-l-4 border-l-red-600 border-y-0 border-r-0 pl-2'>
-                <p className='text-white te text-base font-normal'>Explore o Crioulo Cabo-verdiano com "Palavra do Dia" e "Provérbios" - a experiência perfeita para sua jornada linguística.</p>
+                <p className='text-white te text-base font-normal'>Explore o Crioulo Cabo-verdiano com &quot;Palavra do Dia&quot; e &quot;Provérbios&quot; - a experiência perfeita para sua jornada linguística.</p>
               </div>
 
 
@@ -41,7 +41,7 @@ function Feature() {
               <div className='p-4 flex flex-col justify-center items-center bg-white rounded-2xl shadow-md overflow-visible'>
 
                 <h5 className='p-2 text-xl font-semibold text-center text-gray-950'>Palavra do dia</h5>
-                <p className='pb-4 text-gray-600 text-base font-normal text-center'>Explore uma nova palavra todos os dias com a nossa "Palavra do Dia".</p>
+                <p className='pb-4 text-gray-600 text-base font-normal text-center'>Cada dia, uma nova palavra do Crioulo Cabo-verdiano para expandir seus horizontes linguísticos.</p>
                 <div>
                   <img src="/feature-1.svg" alt="" />
                 </div>
@@ -54,15 +54,15 @@ function Feature() {
                   <img src="/feature-2.svg" alt="" />
                 </div>
 
-                <h5 className='p-2 text-xl font-semibold text-center text-gray-950'>Palavra do dia</h5>
-                <p className='pb-4 text-gray-600 text-base font-normal text-center'>Explore uma nova palavra todos os dias com a nossa "Palavra do Dia".</p>
+                <h5 className='p-2 text-xl font-semibold text-center text-gray-950'>Provérbios</h5>
+                <p className='pb-4 text-gray-600 text-base font-normal text-center'>Cada provérbio é mais que palavras; é uma janela para a riqueza da sabedoria e tradição do Crioulo Cabo-verdiano.</p>
 
               </div>
 
               <div className='p-4 flex flex-col justify-center items-center bg-white rounded-2xl shadow-md overflow-visible'>
 
-                <h5 className='p-2 text-xl font-semibold text-center text-gray-950'>Palavra do dia</h5>
-                <p className='pb-4 text-gray-600 text-base font-normal text-center'>Explore uma nova palavra todos os dias com a nossa "Palavra do Dia".</p>
+                <h5 className='p-2 text-xl font-semibold text-center text-gray-950'>Definições</h5>
+                <p className='pb-4 text-gray-600 text-base font-normal text-center'>Vá além de simples definições. Conecte-se à língua de Cabo Verde de maneira prática, transformando palavras em experiências que podem enriquecer sua vida diária.</p>
                 <div>
                   <img src="/feature-3.svg" alt="" />
                 </div>

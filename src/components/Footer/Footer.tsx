@@ -49,7 +49,7 @@ const Footer = () => {
                   <a href="#" className="hover:underline">Politica de Privacidade</a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">Termos & Condiçoes</a>
+                  <a href="#" className="hover:underline">Termos &amp; Condiçoes</a>
                 </li>
               </ul>
             </div>
@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="flex justify-center items-center">
-          <span className="text-sm text-white sm:text-center dark:text-gray-400">© 2023 <a href="/" className="hover:underline">Nos Kriolo™</a>. Todos os direitos reservados.
+          <span className="text-sm text-white sm:text-center dark:text-gray-400">	&copy; 2023 <a href="/" className="hover:underline">Nos Kriolo&trade;</a>. Todos os direitos reservados.
           </span>
 
         </div>

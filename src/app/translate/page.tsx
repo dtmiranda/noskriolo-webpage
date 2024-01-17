@@ -1,14 +1,16 @@
 'use client'
 
 import React, { useState } from 'react'
-
 import { useCompletion } from 'ai/react'
+import ReactFlagsSelect from 'react-flags-select'
+
 import Header from '@/components/Header/Header'
 
 const Translate = () => {
+  const [selectedFromLaguage, SetSelectedFromLanguage] = useState('')
+  const [selectedToLanguage, SetSelectedToLanguage] = useState('Cape Verde')
 
-  const [fromLanguage, setFromLanguage] = useState('portuguese')
-  const [toLanguage, setToLanguage] = useState('criolo')
+
 
   const {
     completion,
@@ -19,8 +21,8 @@ const Translate = () => {
   } = useCompletion({
     api: '/api/translate-text',
     body: {
-      fromLanguage,
-      toLanguage
+      selectedFromLaguage,
+      selectedToLanguage
     }
   })
 
@@ -53,16 +55,13 @@ const Translate = () => {
 
           <div className='flex justify-between items-center mb-1'>
 
-            <select
-              id="default"
-              value={fromLanguage}
-              className="min-w-1/2 rounded-lg bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-              <option selected>Escolha um idioma</option>
-              <option value="cr-cr">Criolo</option>
-              <option value="fr-fr">Francês</option>
-              <option value="en-en">Inglês</option>
-              <option value="pt-pt">Português</option>
-            </select>
+            <ReactFlagsSelect
+              className="min-w-1/2 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              selected={selectedFromLaguage}
+              //countries={["CV", "CN", "FR", "PT", "GB", "US"]}
+              onSelect={(code) => SetSelectedFromLanguage(code)}
+              placeholder='Selecione um país'
+            />
 
 
             <button type="button" className="p-2  text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
@@ -73,17 +72,14 @@ const Translate = () => {
             </button>
 
 
-            <select
-              id="default"
-              value={toLanguage}
-              className="min-w-1/2 rounded-lg bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-              <option selected>Escolha um idioma</option>
-              <option value="cr-cr">Criolo</option>
-              <option value="fr-fr">Francês</option>
-              <option value="en-en">Inglês</option>
-              <option value="pt-pt">Português</option>
-            </select>
-
+            <ReactFlagsSelect
+              className="min-w-1/2 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              selected={selectedToLanguage}
+              onSelect={(code) => SetSelectedToLanguage(code)}
+              countries={["CV"]}
+              disabled={false}
+              placeholder='Selecione um país'
+            />
 
 
           </div>
@@ -106,14 +102,7 @@ const Translate = () => {
 
                     </div>
 
-                    {/* <div className="flex flex-wrap items-center space-x-1 rtl:space-x-reverse sm:ps-4">
-                    <button type="button" className="p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
-                      <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 18">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.5 3h9.563M9.5 9h9.563M9.5 15h9.563M1.5 13a2 2 0 1 1 3.321 1.5L1.5 17h5m-5-15 2-1v6m-2 0h4" />
-                      </svg>
-                      <span className="sr-only">Add list</span>
-                    </button>
-                  </div> */}
+
                   </div>
 
                   <button type="button" data-tooltip-target="tooltip-fullscreen" className="p-2 text-gray-500 rounded cursor-pointer sm:ms-auto hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">

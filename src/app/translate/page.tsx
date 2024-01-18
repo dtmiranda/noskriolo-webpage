@@ -7,8 +7,8 @@ import ReactFlagsSelect from 'react-flags-select'
 import Header from '@/components/Header/Header'
 
 const Translate = () => {
-  const [selectedFromLaguage, SetSelectedFromLanguage] = useState('')
-  const [selectedToLanguage, SetSelectedToLanguage] = useState('Cape Verde')
+  const [selectedFromLanguage, SetSelectedFromLanguage] = useState('')
+  const [selectedToLanguage, SetSelectedToLanguage] = useState('')
 
 
 
@@ -17,19 +17,16 @@ const Translate = () => {
     input,
     isLoading,
     handleInputChange,
-    handleSubmit
+    handleSubmit,
   } = useCompletion({
     api: '/api/translate-text',
     body: {
-      selectedFromLaguage,
+      selectedFromLanguage,
       selectedToLanguage
     }
   })
 
-  console.log("translation: " + completion)
-
   const result = completion;
-
 
 
   return (
@@ -47,7 +44,7 @@ const Translate = () => {
             <div>
 
               <h3 className="mb-2 text-lg font-bold dark:text-white">Traduzir Criolo</h3>
-              <p className="text-gray-500 dark:text-gray-400">Para mais de 100 idiomas diferente</p>
+              <p className="text-gray-500 dark:text-gray-400">Para mais de 100 idiomas e vice-versa</p>
 
             </div>
 
@@ -57,17 +54,20 @@ const Translate = () => {
 
             <ReactFlagsSelect
               className="min-w-1/2 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              selected={selectedFromLaguage}
+              selected={selectedFromLanguage}
+              searchable
+              searchPlaceholder='Digite um país'
               //countries={["CV", "CN", "FR", "PT", "GB", "US"]}
               onSelect={(code) => SetSelectedFromLanguage(code)}
               placeholder='Selecione um país'
             />
 
 
-            <button type="button" className="p-2  text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
-              <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 18">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 14 3-3m-3 3 3 3m-3-3h16v-3m2-7-3 3m3-3-3-3m3 3H3v3" />
+            <button type="button" className="hidden md: p-2  text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
+
               <span className="sr-only">Attach file</span>
             </button>
 
@@ -76,7 +76,7 @@ const Translate = () => {
               className="min-w-1/2 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               selected={selectedToLanguage}
               onSelect={(code) => SetSelectedToLanguage(code)}
-              countries={["CV"]}
+              //countries={["CV"]}
               disabled={false}
               placeholder='Selecione um país'
             />
@@ -118,6 +118,7 @@ const Translate = () => {
                   <label htmlFor="text" className="sr-only">Publish post</label>
                   <textarea
                     id="text"
+
                     rows={12}
                     value={input}
                     onChange={handleInputChange}

@@ -11,21 +11,25 @@ const openai = new OpenAI({
 
 export async function POST(req: Request) {
   // Extract the `messages` from the body of the request
-  const { fromLanguage, toLanguage, prompt } = await req.json();
+  const { selectedFromLanguage, selectedToLanguage, prompt } = await req.json();
 
 
-  console.log("text: " + prompt)
-  console.log("FromLanguage: " + fromLanguage)
-  console.log("ToLanguage: " + toLanguage)
-
-  console.log("")
+  /* console.log("text: " + prompt)
+  console.log("FromLanguage: " + selectedFromLanguage)
+  console.log("ToLanguage: " + selectedToLanguage) */
 
   const translationPrompt = `
-    As an experienced translator with expertise in Cape Verdean Creole, your objective is to translate the following text from a specified language into Cape Verdean Creole.
-
-    Target Language:
+    As an adept translator specializing in Cape Verdean Creole, your goal is to 
+    deliver the most accurate and high-quality translation for the provided text.
+    
+    Translate from:
     """
-    ${toLanguage}
+    ${selectedFromLanguage}
+    """
+
+    To:
+    """
+    ${selectedToLanguage}
     """
 
     Text to Translate:

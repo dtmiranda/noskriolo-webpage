@@ -14,6 +14,7 @@ const Translate = () => {
 
   const {
     completion,
+    error,
     input,
     isLoading,
     handleInputChange,
@@ -31,8 +32,6 @@ const Translate = () => {
 
   return (
     <>
-
-
       <Header />
       <section className='p-4 min-h-screen bg-white sm:p-6 dark:bg-gray-800'>
         <div className='mx-auto max-w-screen-xl'>
@@ -49,6 +48,32 @@ const Translate = () => {
             </div>
 
           </div>
+          {selectedFromLanguage == "" || selectedToLanguage == ""
+            ? <div className="flex items-center p-4 mb-4 text-sm text-yellow-800 border border-yellow-300 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300 dark:border-yellow-800" role="alert">
+              <svg className="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+              </svg>
+              <span className="sr-only">Info</span>
+              <div>
+                <span className="font-medium">Aviso!</span> Escolha os idiomas.
+              </div>
+            </div>
+            : ""
+          }
+
+          {error
+            ? <div className="flex items-center p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800" role="alert">
+              <svg className="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+              </svg>
+              <span className="sr-only">Info</span>
+              <div>
+                <span className="font-medium">Erro!</span> Não foi possivel efectuar a tradução.
+              </div>
+            </div>
+            : ""
+          }
+
 
           <div className='flex justify-between items-center mb-1'>
 
@@ -118,7 +143,6 @@ const Translate = () => {
                   <label htmlFor="text" className="sr-only">Publish post</label>
                   <textarea
                     id="text"
-
                     rows={12}
                     value={input}
                     onChange={handleInputChange}
@@ -175,7 +199,12 @@ const Translate = () => {
                 </div>
               </div>
             </div>
-            <button disabled={isLoading} type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Traduzir</button>
+            <button
+              disabled={isLoading}
+              type="submit"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+              Traduzir
+            </button>
 
           </form>
 

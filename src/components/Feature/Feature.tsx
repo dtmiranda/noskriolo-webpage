@@ -36,22 +36,22 @@ function Feature() {
         <div>
           <div className='px-4 mx-auto max-w-screen-xl lg:px-6'>
 
-            <div className='grid grid-cols-3 gap-6 -mb-60'>
+            <div className='grid grid-cols-1 md:grid-cols-2 md:gap-3 lg:grid-cols-3 lg:gap-6 -mb-60'>
 
               <div className='p-4 flex flex-col justify-center items-center bg-white rounded-2xl shadow-md overflow-visible'>
 
                 <h5 className='p-2 text-xl font-semibold text-center text-gray-950'>Palavra do dia</h5>
                 <p className='pb-4 text-gray-600 text-base font-normal text-center'>Cada dia, uma nova palavra do Crioulo Cabo-verdiano para expandir seus horizontes linguísticos.</p>
                 <div>
-                  <img src="/feature-1.svg" alt="" />
+                  <img className='' src="/feature-1.svg" alt="" />
                 </div>
 
               </div>
 
-              <div className='p-4 flex flex-col justify-center rounded-2xl items-center bg-white shadow-xl overflow-visible'>
+              <div className='my-4 lg:my-0 p-4 flex flex-col justify-center rounded-2xl items-center bg-white shadow-xl overflow-visible'>
 
                 <div>
-                  <img src="/feature-2.svg" alt="" />
+                  <img className='' src="/feature-2.svg" alt="" />
                 </div>
 
                 <h5 className='p-2 text-xl font-semibold text-center text-gray-950'>Provérbios</h5>
@@ -64,7 +64,7 @@ function Feature() {
                 <h5 className='p-2 text-xl font-semibold text-center text-gray-950'>Definições</h5>
                 <p className='pb-4 text-gray-600 text-base font-normal text-center'>Vá além de simples definições. Conecte-se à língua de Cabo Verde de maneira prática, transformando palavras em experiências que podem enriquecer sua vida diária.</p>
                 <div>
-                  <img src="/feature-3.svg" alt="" />
+                  <img className='' src="/feature-3.svg" alt="" />
                 </div>
 
 

@@ -75,10 +75,10 @@ const Translate = () => {
           }
 
 
-          <div className='flex justify-between items-center mb-1'>
+          <div className='flex-auto md:grid md:grid-cols-2 md: gap-3 mb-2 '>
 
             <ReactFlagsSelect
-              className="min-w-1/2 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className=" min-w-1/2 text-gray-900 text-sm my-1 focus:ring-blue-500 focus:border-blue-500 block w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               selected={selectedFromLanguage}
               searchable
               searchPlaceholder='Digite um país'
@@ -88,17 +88,17 @@ const Translate = () => {
             />
 
 
-            <button type="button" className="hidden md: p-2  text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
+            {/* <button type="button" className="hidden md: p-2  text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
 
               <span className="sr-only">Attach file</span>
-            </button>
+            </button> */}
 
 
             <ReactFlagsSelect
-              className="min-w-1/2 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="min-w-1/2 text-gray-900 text-sm  my-1 focus:ring-blue-500 focus:border-blue-500 block w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               selected={selectedToLanguage}
               onSelect={(code) => SetSelectedToLanguage(code)}
               //countries={["CV"]}
